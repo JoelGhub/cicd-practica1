@@ -26,9 +26,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # 3. Instalar dependencias (requiere package-lock.json en el repo)
+      # 3. Instalar dependencias
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # 4. Ejecutar tests
       - name: Run tests

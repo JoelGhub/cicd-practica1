@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: package-lock.json
 
       # 3. Instalar dependencias (requiere package-lock.json en el repo)
       - name: Install dependencies

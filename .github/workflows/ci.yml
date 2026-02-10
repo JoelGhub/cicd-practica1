@@ -20,12 +20,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Setup Node.js + cache de dependencias
+      # 2. Setup Node.js
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
 
       # 3. Instalar dependencias (requiere package-lock.json en el repo)
       - name: Install dependencies
